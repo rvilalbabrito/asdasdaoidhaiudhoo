@@ -4,7 +4,11 @@ import { handleMessage } from "../services/FacebookServices/facebookMessageListe
 // import { handleMessage } from "../services/FacebookServices/facebookMessageListener";
 
 export const index = async (req: Request, res: Response): Promise<Response> => {
+<<<<<<< Updated upstream
   const VERIFY_TOKEN = process.env.VERIFY_TOKEN || "whaticket";
+=======
+  const VERIFY_TOKEN = process.env.VERIFY_TOKEN || "atendimentos";
+>>>>>>> Stashed changes
 
   const mode = req.query["hub.mode"];
   const token = req.query["hub.verify_token"];
